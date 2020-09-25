@@ -14,6 +14,9 @@
 		185E65B5251E38E9009EA955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185E65B3251E38E9009EA955 /* LaunchScreen.storyboard */; };
 		185E65C0251E38EA009EA955 /* PhotoLoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E65BF251E38EA009EA955 /* PhotoLoveTests.swift */; };
 		185E65CB251E38EA009EA955 /* PhotoLoveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E65CA251E38EA009EA955 /* PhotoLoveUITests.swift */; };
+		35FED7C85B03AD5D95B3E4F5 /* Pods_PhotoLoveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAD82F8B1BA35F7861C4180 /* Pods_PhotoLoveTests.framework */; };
+		A1D7CBFF663FB6B8432F3383 /* Pods_PhotoLove_PhotoLoveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E3B107757565668150A881 /* Pods_PhotoLove_PhotoLoveUITests.framework */; };
+		D475B2008A8103DCDB39203D /* Pods_PhotoLove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E5AB417048571409A513EA /* Pods_PhotoLove.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04CC0BEA0AD7379746516E43 /* Pods-PhotoLove.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLove.debug.xcconfig"; path = "Target Support Files/Pods-PhotoLove/Pods-PhotoLove.debug.xcconfig"; sourceTree = "<group>"; };
 		185E65A2251E38E5009EA955 /* PhotoLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185E65A5251E38E5009EA955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		185E65A7251E38E5009EA955 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 		185E65C6251E38EA009EA955 /* PhotoLoveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoLoveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		185E65CA251E38EA009EA955 /* PhotoLoveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLoveUITests.swift; sourceTree = "<group>"; };
 		185E65CC251E38EA009EA955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DAF49F7B3F08F93F63BF60E /* Pods-PhotoLove.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLove.release.xcconfig"; path = "Target Support Files/Pods-PhotoLove/Pods-PhotoLove.release.xcconfig"; sourceTree = "<group>"; };
+		8FAD82F8B1BA35F7861C4180 /* Pods_PhotoLoveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoLoveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9763FE8076D22A8610F1C39F /* Pods-PhotoLove-PhotoLoveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLove-PhotoLoveUITests.release.xcconfig"; path = "Target Support Files/Pods-PhotoLove-PhotoLoveUITests/Pods-PhotoLove-PhotoLoveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AC2DD5FD8EAA73F0C4CE7F7B /* Pods-PhotoLoveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLoveTests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoLoveTests/Pods-PhotoLoveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0E07448918863960284414F /* Pods-PhotoLoveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLoveTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoLoveTests/Pods-PhotoLoveTests.release.xcconfig"; sourceTree = "<group>"; };
+		DAA65626B08247832B5FC3D0 /* Pods-PhotoLove-PhotoLoveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLove-PhotoLoveUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoLove-PhotoLoveUITests/Pods-PhotoLove-PhotoLoveUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2E5AB417048571409A513EA /* Pods_PhotoLove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoLove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E3B107757565668150A881 /* Pods_PhotoLove_PhotoLoveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoLove_PhotoLoveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D475B2008A8103DCDB39203D /* Pods_PhotoLove.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FED7C85B03AD5D95B3E4F5 /* Pods_PhotoLoveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D7CBFF663FB6B8432F3383 /* Pods_PhotoLove_PhotoLoveUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				185E65BE251E38EA009EA955 /* PhotoLoveTests */,
 				185E65C9251E38EA009EA955 /* PhotoLoveUITests */,
 				185E65A3251E38E5009EA955 /* Products */,
+				CEA02AF310AB8DD58FAFC1BB /* Pods */,
+				B96D7AC07252CC1B1D724EBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +158,30 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B96D7AC07252CC1B1D724EBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2E5AB417048571409A513EA /* Pods_PhotoLove.framework */,
+				F8E3B107757565668150A881 /* Pods_PhotoLove_PhotoLoveUITests.framework */,
+				8FAD82F8B1BA35F7861C4180 /* Pods_PhotoLoveTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEA02AF310AB8DD58FAFC1BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04CC0BEA0AD7379746516E43 /* Pods-PhotoLove.debug.xcconfig */,
+				2DAF49F7B3F08F93F63BF60E /* Pods-PhotoLove.release.xcconfig */,
+				DAA65626B08247832B5FC3D0 /* Pods-PhotoLove-PhotoLoveUITests.debug.xcconfig */,
+				9763FE8076D22A8610F1C39F /* Pods-PhotoLove-PhotoLoveUITests.release.xcconfig */,
+				AC2DD5FD8EAA73F0C4CE7F7B /* Pods-PhotoLoveTests.debug.xcconfig */,
+				D0E07448918863960284414F /* Pods-PhotoLoveTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 185E65CF251E38EA009EA955 /* Build configuration list for PBXNativeTarget "PhotoLove" */;
 			buildPhases = (
+				06400EF56C1160671DF52AC8 /* [CP] Check Pods Manifest.lock */,
 				185E659E251E38E5009EA955 /* Sources */,
 				185E659F251E38E5009EA955 /* Frameworks */,
 				185E65A0251E38E5009EA955 /* Resources */,
+				019D858528E88A503D30F641 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 185E65D2251E38EA009EA955 /* Build configuration list for PBXNativeTarget "PhotoLoveTests" */;
 			buildPhases = (
+				5DB7D13220F3D545523C6C75 /* [CP] Check Pods Manifest.lock */,
 				185E65B7251E38EA009EA955 /* Sources */,
 				185E65B8251E38EA009EA955 /* Frameworks */,
 				185E65B9251E38EA009EA955 /* Resources */,
@@ -183,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 185E65D5251E38EA009EA955 /* Build configuration list for PBXNativeTarget "PhotoLoveUITests" */;
 			buildPhases = (
+				D03741B3CD938C0CFC23128A /* [CP] Check Pods Manifest.lock */,
 				185E65C2251E38EA009EA955 /* Sources */,
 				185E65C3251E38EA009EA955 /* Frameworks */,
 				185E65C4251E38EA009EA955 /* Resources */,
+				48C24F646C733BA95815057C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +310,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		019D858528E88A503D30F641 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoLove/Pods-PhotoLove-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoLove/Pods-PhotoLove-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoLove/Pods-PhotoLove-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		06400EF56C1160671DF52AC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoLove-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48C24F646C733BA95815057C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoLove-PhotoLoveUITests/Pods-PhotoLove-PhotoLoveUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoLove-PhotoLoveUITests/Pods-PhotoLove-PhotoLoveUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoLove-PhotoLoveUITests/Pods-PhotoLove-PhotoLoveUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DB7D13220F3D545523C6C75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoLoveTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D03741B3CD938C0CFC23128A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoLove-PhotoLoveUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		185E659E251E38E5009EA955 /* Sources */ = {
@@ -437,6 +586,7 @@
 		};
 		185E65D0251E38EA009EA955 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04CC0BEA0AD7379746516E43 /* Pods-PhotoLove.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +606,7 @@
 		};
 		185E65D1251E38EA009EA955 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DAF49F7B3F08F93F63BF60E /* Pods-PhotoLove.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +626,7 @@
 		};
 		185E65D3251E38EA009EA955 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC2DD5FD8EAA73F0C4CE7F7B /* Pods-PhotoLoveTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +649,7 @@
 		};
 		185E65D4251E38EA009EA955 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0E07448918863960284414F /* Pods-PhotoLoveTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +672,7 @@
 		};
 		185E65D6251E38EA009EA955 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAA65626B08247832B5FC3D0 /* Pods-PhotoLove-PhotoLoveUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +693,7 @@
 		};
 		185E65D7251E38EA009EA955 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9763FE8076D22A8610F1C39F /* Pods-PhotoLove-PhotoLoveUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

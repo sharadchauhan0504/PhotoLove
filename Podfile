@@ -6,6 +6,7 @@ target 'PhotoLove' do
   use_frameworks!
 
   # Pods for PhotoLove
+  pod 'Alamofire', '~> 5.2'
 
   target 'PhotoLoveTests' do
     inherit! :search_paths
