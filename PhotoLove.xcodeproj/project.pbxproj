@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1801B0B3252068BF00B21ED4 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B0B2252068BF00B21ED4 /* Routable.swift */; };
+		1801B0B8252068EA00B21ED4 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B0B7252068EA00B21ED4 /* HTTPMethod.swift */; };
+		1801B0BD2520690300B21ED4 /* RawJSONOverHTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B0BC2520690300B21ED4 /* RawJSONOverHTTP.swift */; };
+		1801B0C22520692D00B21ED4 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B0C12520692D00B21ED4 /* APIRouter.swift */; };
+		1801B0C82520699700B21ED4 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B0C72520699700B21ED4 /* URLSessionDataTaskProtocol.swift */; };
+		1801B0D0252069AB00B21ED4 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B0CF252069AB00B21ED4 /* MockURLSession.swift */; };
+		1801B0D6252069EF00B21ED4 /* PhotosErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B0D5252069EF00B21ED4 /* PhotosErrors.swift */; };
 		185E65A6251E38E5009EA955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E65A5251E38E5009EA955 /* AppDelegate.swift */; };
 		185E65A8251E38E5009EA955 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E65A7251E38E5009EA955 /* SceneDelegate.swift */; };
 		185E65B0251E38E5009EA955 /* PhotoLove.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 185E65AE251E38E5009EA955 /* PhotoLove.xcdatamodeld */; };
@@ -38,6 +45,13 @@
 
 /* Begin PBXFileReference section */
 		04CC0BEA0AD7379746516E43 /* Pods-PhotoLove.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoLove.debug.xcconfig"; path = "Target Support Files/Pods-PhotoLove/Pods-PhotoLove.debug.xcconfig"; sourceTree = "<group>"; };
+		1801B0B2252068BF00B21ED4 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		1801B0B7252068EA00B21ED4 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		1801B0BC2520690300B21ED4 /* RawJSONOverHTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawJSONOverHTTP.swift; sourceTree = "<group>"; };
+		1801B0C12520692D00B21ED4 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		1801B0C72520699700B21ED4 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
+		1801B0CF252069AB00B21ED4 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		1801B0D5252069EF00B21ED4 /* PhotosErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosErrors.swift; sourceTree = "<group>"; };
 		185E65A2251E38E5009EA955 /* PhotoLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185E65A5251E38E5009EA955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		185E65A7251E38E5009EA955 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +103,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1801B0B02520689500B21ED4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1801B0C62520697B00B21ED4 /* Network Mock Classes */,
+				1801B0B1252068A900B21ED4 /* API Structure */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1801B0B1252068A900B21ED4 /* API Structure */ = {
+			isa = PBXGroup;
+			children = (
+				1801B0B2252068BF00B21ED4 /* Routable.swift */,
+				1801B0B7252068EA00B21ED4 /* HTTPMethod.swift */,
+				1801B0BC2520690300B21ED4 /* RawJSONOverHTTP.swift */,
+				1801B0C12520692D00B21ED4 /* APIRouter.swift */,
+			);
+			path = "API Structure";
+			sourceTree = "<group>";
+		};
+		1801B0C62520697B00B21ED4 /* Network Mock Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1801B0C72520699700B21ED4 /* URLSessionDataTaskProtocol.swift */,
+				1801B0CF252069AB00B21ED4 /* MockURLSession.swift */,
+			);
+			path = "Network Mock Classes";
+			sourceTree = "<group>";
+		};
+		1801B0D4252069D700B21ED4 /* Error Cases */ = {
+			isa = PBXGroup;
+			children = (
+				1801B0D5252069EF00B21ED4 /* PhotosErrors.swift */,
+			);
+			path = "Error Cases";
+			sourceTree = "<group>";
+		};
 		185E6599251E38E5009EA955 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +167,8 @@
 			children = (
 				185E65A5251E38E5009EA955 /* AppDelegate.swift */,
 				185E65A7251E38E5009EA955 /* SceneDelegate.swift */,
+				1801B0D4252069D700B21ED4 /* Error Cases */,
+				1801B0B02520689500B21ED4 /* Network */,
 				185E65E1251E3949009EA955 /* Modules */,
 				185E65E2251E3959009EA955 /* Supporting Files */,
 				185E65B6251E38E9009EA955 /* Info.plist */,
@@ -178,7 +231,6 @@
 				AC2DD5FD8EAA73F0C4CE7F7B /* Pods-PhotoLoveTests.debug.xcconfig */,
 				D0E07448918863960284414F /* Pods-PhotoLoveTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -419,9 +471,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1801B0C22520692D00B21ED4 /* APIRouter.swift in Sources */,
 				185E65A6251E38E5009EA955 /* AppDelegate.swift in Sources */,
+				1801B0C82520699700B21ED4 /* URLSessionDataTaskProtocol.swift in Sources */,
+				1801B0D6252069EF00B21ED4 /* PhotosErrors.swift in Sources */,
 				185E65B0251E38E5009EA955 /* PhotoLove.xcdatamodeld in Sources */,
 				185E65A8251E38E5009EA955 /* SceneDelegate.swift in Sources */,
+				1801B0B8252068EA00B21ED4 /* HTTPMethod.swift in Sources */,
+				1801B0D0252069AB00B21ED4 /* MockURLSession.swift in Sources */,
+				1801B0BD2520690300B21ED4 /* RawJSONOverHTTP.swift in Sources */,
+				1801B0B3252068BF00B21ED4 /* Routable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
