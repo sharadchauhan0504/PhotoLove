@@ -14,8 +14,20 @@
 		1801B0C82520699700B21ED4 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B0C72520699700B21ED4 /* URLSessionDataTaskProtocol.swift */; };
 		1801B0D0252069AB00B21ED4 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B0CF252069AB00B21ED4 /* MockURLSession.swift */; };
 		1801B0D6252069EF00B21ED4 /* PhotosErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801B0D5252069EF00B21ED4 /* PhotosErrors.swift */; };
+		180A3C242521C2B700D448DA /* SplashScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A3C222521C2B700D448DA /* SplashScreenController.swift */; };
+		180A3C252521C2B700D448DA /* SplashScreenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180A3C232521C2B700D448DA /* SplashScreenController.xib */; };
+		180A3C362521C6EE00D448DA /* LoginScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A3C342521C6EE00D448DA /* LoginScreenController.swift */; };
+		180A3C372521C6EE00D448DA /* LoginScreenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180A3C352521C6EE00D448DA /* LoginScreenController.xib */; };
+		180A3C402521CFCB00D448DA /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A3C3F2521CFCB00D448DA /* UIColorExtensions.swift */; };
+		180A3C452521D04800D448DA /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A3C442521D04800D448DA /* UIViewExtensions.swift */; };
+		180A3C682521D5A800D448DA /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A3C672521D5A800D448DA /* LoginScreenViewModel.swift */; };
+		180A3C702521DC9300D448DA /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A3C6F2521DC9300D448DA /* StringExtension.swift */; };
+		180A3C772521EFDC00D448DA /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A3C762521EFDC00D448DA /* FirebaseService.swift */; };
+		180A3C802521F0C900D448DA /* FirebaseAuthenticationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A3C7F2521F0C900D448DA /* FirebaseAuthenticationHandler.swift */; };
+		180A3CBF2521F6B400D448DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 180A3CBE2521F6B400D448DA /* GoogleService-Info.plist */; };
+		180A3D0625221B6500D448DA /* LoginScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A3D0525221B6500D448DA /* LoginScreenUITests.swift */; };
+		180A3D0F25221DE500D448DA /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A3D0E25221DE500D448DA /* XCTestCaseExtension.swift */; };
 		185E65A6251E38E5009EA955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E65A5251E38E5009EA955 /* AppDelegate.swift */; };
-		185E65A8251E38E5009EA955 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E65A7251E38E5009EA955 /* SceneDelegate.swift */; };
 		185E65B0251E38E5009EA955 /* PhotoLove.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 185E65AE251E38E5009EA955 /* PhotoLove.xcdatamodeld */; };
 		185E65B2251E38E9009EA955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185E65B1251E38E9009EA955 /* Assets.xcassets */; };
 		185E65B5251E38E9009EA955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185E65B3251E38E9009EA955 /* LaunchScreen.storyboard */; };
@@ -52,9 +64,21 @@
 		1801B0C72520699700B21ED4 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
 		1801B0CF252069AB00B21ED4 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		1801B0D5252069EF00B21ED4 /* PhotosErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosErrors.swift; sourceTree = "<group>"; };
+		180A3C222521C2B700D448DA /* SplashScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenController.swift; sourceTree = "<group>"; };
+		180A3C232521C2B700D448DA /* SplashScreenController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenController.xib; sourceTree = "<group>"; };
+		180A3C342521C6EE00D448DA /* LoginScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenController.swift; sourceTree = "<group>"; };
+		180A3C352521C6EE00D448DA /* LoginScreenController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginScreenController.xib; sourceTree = "<group>"; };
+		180A3C3F2521CFCB00D448DA /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		180A3C442521D04800D448DA /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		180A3C672521D5A800D448DA /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
+		180A3C6F2521DC9300D448DA /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		180A3C762521EFDC00D448DA /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		180A3C7F2521F0C900D448DA /* FirebaseAuthenticationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationHandler.swift; sourceTree = "<group>"; };
+		180A3CBE2521F6B400D448DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		180A3D0525221B6500D448DA /* LoginScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenUITests.swift; sourceTree = "<group>"; };
+		180A3D0E25221DE500D448DA /* XCTestCaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtension.swift; sourceTree = "<group>"; };
 		185E65A2251E38E5009EA955 /* PhotoLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185E65A5251E38E5009EA955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		185E65A7251E38E5009EA955 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		185E65AF251E38E5009EA955 /* PhotoLove.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoLove.xcdatamodel; sourceTree = "<group>"; };
 		185E65B1251E38E9009EA955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185E65B4251E38E9009EA955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,6 +130,7 @@
 		1801B0B02520689500B21ED4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				180A3C7E2521F0AF00D448DA /* Firebase Auth */,
 				1801B0C62520697B00B21ED4 /* Network Mock Classes */,
 				1801B0B1252068A900B21ED4 /* API Structure */,
 			);
@@ -140,6 +165,123 @@
 			path = "Error Cases";
 			sourceTree = "<group>";
 		};
+		180A3C1D2521C20300D448DA /* Login Screen */ = {
+			isa = PBXGroup;
+			children = (
+				180A3C662521D59400D448DA /* View Model */,
+				180A3C332521C6D500D448DA /* Controller */,
+			);
+			path = "Login Screen";
+			sourceTree = "<group>";
+		};
+		180A3C212521C29700D448DA /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				180A3C322521C6C900D448DA /* Controller */,
+			);
+			path = "Splash Screen";
+			sourceTree = "<group>";
+		};
+		180A3C322521C6C900D448DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				180A3C222521C2B700D448DA /* SplashScreenController.swift */,
+				180A3C232521C2B700D448DA /* SplashScreenController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		180A3C332521C6D500D448DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				180A3C342521C6EE00D448DA /* LoginScreenController.swift */,
+				180A3C352521C6EE00D448DA /* LoginScreenController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		180A3C3E2521CFB600D448DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				180A3C3F2521CFCB00D448DA /* UIColorExtensions.swift */,
+				180A3C442521D04800D448DA /* UIViewExtensions.swift */,
+				180A3C6F2521DC9300D448DA /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		180A3C662521D59400D448DA /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				180A3C672521D5A800D448DA /* LoginScreenViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		180A3C742521EFB300D448DA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				180A3C752521EFBB00D448DA /* App Delegate Services */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		180A3C752521EFBB00D448DA /* App Delegate Services */ = {
+			isa = PBXGroup;
+			children = (
+				180A3C762521EFDC00D448DA /* FirebaseService.swift */,
+			);
+			path = "App Delegate Services";
+			sourceTree = "<group>";
+		};
+		180A3C7E2521F0AF00D448DA /* Firebase Auth */ = {
+			isa = PBXGroup;
+			children = (
+				180A3C7F2521F0C900D448DA /* FirebaseAuthenticationHandler.swift */,
+			);
+			path = "Firebase Auth";
+			sourceTree = "<group>";
+		};
+		180A3D0225221B2F00D448DA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				180A3D0325221B3800D448DA /* Login Flow */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		180A3D0325221B3800D448DA /* Login Flow */ = {
+			isa = PBXGroup;
+			children = (
+				180A3D0525221B6500D448DA /* LoginScreenUITests.swift */,
+			);
+			path = "Login Flow";
+			sourceTree = "<group>";
+		};
+		180A3D0D25221DC400D448DA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				180A3D0E25221DE500D448DA /* XCTestCaseExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		180A3D192522249800D448DA /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				180A3D1A252224A500D448DA /* Controller */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		180A3D1A252224A500D448DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			path = "../New Group/Controller";
+			sourceTree = "<group>";
+		};
 		185E6599251E38E5009EA955 = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +308,8 @@
 			isa = PBXGroup;
 			children = (
 				185E65A5251E38E5009EA955 /* AppDelegate.swift */,
-				185E65A7251E38E5009EA955 /* SceneDelegate.swift */,
+				180A3C742521EFB300D448DA /* Components */,
+				180A3C3E2521CFB600D448DA /* Extensions */,
 				1801B0D4252069D700B21ED4 /* Error Cases */,
 				1801B0B02520689500B21ED4 /* Network */,
 				185E65E1251E3949009EA955 /* Modules */,
@@ -188,6 +331,8 @@
 		185E65C9251E38EA009EA955 /* PhotoLoveUITests */ = {
 			isa = PBXGroup;
 			children = (
+				180A3D0D25221DC400D448DA /* Extension */,
+				180A3D0225221B2F00D448DA /* Modules */,
 				185E65CA251E38EA009EA955 /* PhotoLoveUITests.swift */,
 				185E65CC251E38EA009EA955 /* Info.plist */,
 			);
@@ -197,6 +342,9 @@
 		185E65E1251E3949009EA955 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				180A3D192522249800D448DA /* Dashboard */,
+				180A3C212521C29700D448DA /* Splash Screen */,
+				180A3C1D2521C20300D448DA /* Login Screen */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -204,6 +352,7 @@
 		185E65E2251E3959009EA955 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				180A3CBE2521F6B400D448DA /* GoogleService-Info.plist */,
 				185E65B1251E38E9009EA955 /* Assets.xcassets */,
 				185E65B3251E38E9009EA955 /* LaunchScreen.storyboard */,
 				185E65AE251E38E5009EA955 /* PhotoLove.xcdatamodeld */,
@@ -344,7 +493,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				185E65B5251E38E9009EA955 /* LaunchScreen.storyboard in Resources */,
+				180A3C252521C2B700D448DA /* SplashScreenController.xib in Resources */,
+				180A3CBF2521F6B400D448DA /* GoogleService-Info.plist in Resources */,
 				185E65B2251E38E9009EA955 /* Assets.xcassets in Resources */,
+				180A3C372521C6EE00D448DA /* LoginScreenController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,13 +643,20 @@
 			files = (
 				1801B0C22520692D00B21ED4 /* APIRouter.swift in Sources */,
 				185E65A6251E38E5009EA955 /* AppDelegate.swift in Sources */,
+				180A3C772521EFDC00D448DA /* FirebaseService.swift in Sources */,
+				180A3C702521DC9300D448DA /* StringExtension.swift in Sources */,
+				180A3C802521F0C900D448DA /* FirebaseAuthenticationHandler.swift in Sources */,
 				1801B0C82520699700B21ED4 /* URLSessionDataTaskProtocol.swift in Sources */,
+				180A3C452521D04800D448DA /* UIViewExtensions.swift in Sources */,
+				180A3C682521D5A800D448DA /* LoginScreenViewModel.swift in Sources */,
+				180A3C402521CFCB00D448DA /* UIColorExtensions.swift in Sources */,
 				1801B0D6252069EF00B21ED4 /* PhotosErrors.swift in Sources */,
 				185E65B0251E38E5009EA955 /* PhotoLove.xcdatamodeld in Sources */,
-				185E65A8251E38E5009EA955 /* SceneDelegate.swift in Sources */,
+				180A3C362521C6EE00D448DA /* LoginScreenController.swift in Sources */,
 				1801B0B8252068EA00B21ED4 /* HTTPMethod.swift in Sources */,
 				1801B0D0252069AB00B21ED4 /* MockURLSession.swift in Sources */,
 				1801B0BD2520690300B21ED4 /* RawJSONOverHTTP.swift in Sources */,
+				180A3C242521C2B700D448DA /* SplashScreenController.swift in Sources */,
 				1801B0B3252068BF00B21ED4 /* Routable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +674,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				185E65CB251E38EA009EA955 /* PhotoLoveUITests.swift in Sources */,
+				180A3D0F25221DE500D448DA /* XCTestCaseExtension.swift in Sources */,
+				180A3D0625221B6500D448DA /* LoginScreenUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,6 +831,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BAHUH6U3J7;
 				INFOPLIST_FILE = PhotoLove/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -677,7 +839,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.PhotoLove;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -690,6 +852,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BAHUH6U3J7;
 				INFOPLIST_FILE = PhotoLove/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -697,7 +860,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sharad.PhotoLove;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
