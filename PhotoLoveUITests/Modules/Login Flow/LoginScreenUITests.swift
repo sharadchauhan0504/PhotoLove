@@ -44,10 +44,13 @@ class LoginScreenUITests: XCTestCase {
         passwordTextField.tap()
         passwordTextField.typeText("testing")
         
+        let loginButton = loginScreenControllerView.buttons["button--loginButton"]
+        XCTAssertTrue(loginButton.exists)
+        
         let signInButton = loginScreenControllerView.buttons["button--signInButton"]
         XCTAssertTrue(signInButton.exists)
         signInButton.tap()
-        
+                
         wait(2.0)
         app.terminate()
     }

@@ -7,50 +7,62 @@
 
 import Foundation
 import Alamofire
-
-enum RequestType {
-    case live
-    case mock
-
-}
+import RxSwift
+import RxCocoa
 
 struct APIRouter<T: Codable> {
     
     // MARK: - Local Variables
     private let mockSession: URLSessionProtocol!
     private let session: Session!
-    private let requestType: RequestType!
     
     // MARK: - Init
-    init(requestType: RequestType = .live) {
+    init() {
         self.session     = Session.default
         self.mockSession = URLSession(configuration: .default)
-        self.requestType = requestType
     }
     
-    // MARK: API Request
-    func requestData(router: Routable,
-                     completion : @escaping (_ model : T?, _ statusCode: Int? , _ error : Error?) -> Void ) {
+    //MARK:- Alamofire
+    func requestData(_ router: Routable) -> Observable<T> {
         
-        switch requestType {
-        case .live:
-            session.request(router.request).response(queue: .global(qos: .background)) { (response) in
-                curateResponseForUI(response.data, response.response?.statusCode, response.error, completion: completion)
-            }
-        case .mock:
-            let task = self.mockSession.dataTask(with: router.request) { (data, response, error) in
-                if let httpResponse = response as? HTTPURLResponse {
-                    curateResponseForUI(data, httpResponse.statusCode, error, completion: completion)
-                } else {
-                    curateResponseForUI(data, nil, error, completion: completion)
+        return Observable<T>.create { (observer) -> Disposable in
+            
+            let request = AF.request(router.request).responseData { (responseData) in
+                switch responseData.result {
+                case .success(let data):
+                    do {
+                        let model = try JSONDecoder().decode(T.self, from: data)
+                        observer.onNext(model)
+                        observer.onCompleted()
+                    } catch {
+                        observer.onError(PhotosErrors.decodingError)
+                    }
+                case .failure(let error):
+                    observer.onError(error)
                 }
             }
-            task.resume()
-        case .none: break
+            return Disposables.create {
+                request.cancel()
+            }
         }
+    }
+    
+    
+    // MARK: Mock API Request
+    func requestMockData(_ router: Routable,
+                     completion : @escaping (_ model : T?, _ statusCode: Int? , _ error : Error?) -> Void ) {
+        
+        let task = self.mockSession.dataTask(with: router.request) { (data, response, error) in
+            if let httpResponse = response as? HTTPURLResponse {
+                curateResponseForUI(data, httpResponse.statusCode, error, completion: completion)
+            } else {
+                curateResponseForUI(data, nil, error, completion: completion)
+            }
+        }
+        task.resume()
         
     }
-
+    
     private func curateResponseForUI(_ data: Data?, _ statusCode: Int?, _ error: Error?, completion : @escaping (_ model : T?, _ statusCode: Int? , _ error : Error?) -> Void) {
         guard error == nil, let code = statusCode, (200..<300) ~= code else {
             completion(nil, statusCode, PhotosErrors.invalidAPIResponse)

@@ -14,11 +14,14 @@ class LoginScreenViewModel {
     let validatedEmail: Driver<Bool>
     let validatedPassword: Driver<Bool>
     let signInEnabled: Driver<Bool>
+    let logInEnabled: Driver<Bool>
     let isSignInSuccessful: Driver<Bool>
+    let isLogInSuccessful: Driver<Bool>
     
     init(email: Driver<String>,
          password: Driver<String>,
-         signInTaps: Signal<()>) {
+         signInTaps: Signal<()>,
+         logInTaps: Signal<()>) {
         
         validatedEmail = email
             .map { email in
@@ -34,8 +37,18 @@ class LoginScreenViewModel {
             isValdEmail && isValidPassword
         }.distinctUntilChanged()
         
+        logInEnabled = Driver.combineLatest(validatedEmail, validatedPassword) { isValdEmail, isValidPassword in
+            isValdEmail && isValidPassword
+        }.distinctUntilChanged()
+        
         let emailAndPassword = Driver.combineLatest(email, password) { (email: $0, password: $1) }
         isSignInSuccessful = signInTaps.withLatestFrom(emailAndPassword)
+            .flatMapLatest { pair in
+                return FirebaseAuthenticationHandler.createAccount(pair.email, pair.password)
+                    .asDriver(onErrorJustReturn: false)
+            }
+        
+        isLogInSuccessful = logInTaps.withLatestFrom(emailAndPassword)
             .flatMapLatest { pair in
                 return FirebaseAuthenticationHandler.performAuthentication(pair.email, pair.password)
                     .asDriver(onErrorJustReturn: false)

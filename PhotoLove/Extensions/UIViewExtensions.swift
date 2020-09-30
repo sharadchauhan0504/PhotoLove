@@ -31,4 +31,16 @@ extension UIView {
         layer.shadowColor   = shadowColor.cgColor
         layer.shadowRadius  = radius
     }
+    
+    func bounceEffect() {
+        UIView.animate(withDuration: 0.25, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.3, options: .curveEaseOut, animations: {
+            self.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+        }) { (success) in
+            UIView.animate(withDuration: 0.15, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.3, options: .curveEaseOut, animations: {
+                self.transform = .identity
+            }) { (success) in
+                
+            }
+        }
+    }
 }
