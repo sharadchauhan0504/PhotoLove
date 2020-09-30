@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RandomPhotosCollectionCell" id="gTV-IL-0wX" customClass="RandomPhotosCollectionCell" customModule="PhotoLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OcL-7j-8iw">
+                        <rect key="frame" x="14" y="14" width="272" height="372"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVb-3U-gBF">
+                        <rect key="frame" x="10" y="10" width="280" height="380"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wf9-cl-Hkr">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="380"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wf9-cl-Hkr" secondAttribute="bottom" id="EJE-im-UJY"/>
+                            <constraint firstItem="wf9-cl-Hkr" firstAttribute="top" secondItem="QVb-3U-gBF" secondAttribute="top" id="Ntz-3u-O5w"/>
+                            <constraint firstAttribute="trailing" secondItem="wf9-cl-Hkr" secondAttribute="trailing" id="SM2-Kb-h67"/>
+                            <constraint firstItem="wf9-cl-Hkr" firstAttribute="leading" secondItem="QVb-3U-gBF" secondAttribute="leading" id="uwv-Aa-9KF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="QVb-3U-gBF" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="0bQ-4v-cqG"/>
+                <constraint firstItem="OcL-7j-8iw" firstAttribute="height" secondItem="QVb-3U-gBF" secondAttribute="height" multiplier="372:380" id="Dtb-hq-sMA"/>
+                <constraint firstItem="OcL-7j-8iw" firstAttribute="width" secondItem="QVb-3U-gBF" secondAttribute="width" multiplier="272:280" id="Hdd-22-OfS"/>
+                <constraint firstItem="QVb-3U-gBF" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="380:400" id="Zj2-tN-swP"/>
+                <constraint firstItem="QVb-3U-gBF" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="nkf-8m-vX5"/>
+                <constraint firstItem="OcL-7j-8iw" firstAttribute="centerX" secondItem="QVb-3U-gBF" secondAttribute="centerX" id="nnk-G4-uGr"/>
+                <constraint firstItem="QVb-3U-gBF" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="280:300" id="prQ-fz-8SP"/>
+                <constraint firstItem="OcL-7j-8iw" firstAttribute="centerY" secondItem="QVb-3U-gBF" secondAttribute="centerY" id="tMr-W8-3ry"/>
+            </constraints>
+            <connections>
+                <outlet property="backgroundShadowView" destination="OcL-7j-8iw" id="IBC-Nq-mbW"/>
+                <outlet property="containerView" destination="QVb-3U-gBF" id="mzc-SH-Idk"/>
+                <outlet property="randomPhotoImageView" destination="wf9-cl-Hkr" id="1bN-Ct-Obe"/>
+            </connections>
+            <point key="canvasLocation" x="-6" y="104"/>
+        </collectionViewCell>
+    </objects>
+</document>
