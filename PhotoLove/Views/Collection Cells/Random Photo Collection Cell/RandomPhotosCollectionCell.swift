@@ -77,9 +77,8 @@ class RandomPhotosCollectionCell: UICollectionViewCell {
     private func downloadImage(_ url: URL) {
         
         ImageDownloadManager.shared.downloadImageFrom(url)
-            .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
-            .observeOn(MainScheduler.instance)
-            .subscribe( onNext: { [weak self] (image) in
+            .asDriver(onErrorJustReturn: UIImage())
+            .drive( onNext: { [weak self] (image) in
                 guard let strongSelf = self else {return}
                 strongSelf.randomPhotoImageView.image = image
             })

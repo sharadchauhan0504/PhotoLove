@@ -67,17 +67,19 @@ class RandomPhotosController: UIViewController {
     
     private func assignCollectionDelegates() {
         randomPhotosCollectionView.rx.itemSelected
-            .subscribe(onNext: { [weak self] (indexPath) in
+            .asDriver()
+            .drive(onNext: { [weak self] (indexPath) in
                 guard let strongSelf = self, let cell = strongSelf.randomPhotosCollectionView.cellForItem(at: indexPath) else {return}
                 cell.bounceEffect()
             })
             .disposed(by: disposeBag)
-        
     }
     
     private func assignButtonTaps() {
+        
         skipPhotoButton.rx.tap
-            .subscribe(onNext: { [weak self] _ in
+            .asDriver()
+            .drive(onNext: { [weak self] _ in
                 guard let strongSelf = self else {return}
                 strongSelf.scrollToNextPhoto()
                 strongSelf.skipPhotoButton.bounceEffect()
@@ -85,7 +87,8 @@ class RandomPhotosController: UIViewController {
             .disposed(by: disposeBag)
         
         likePhotoButton.rx.tap
-            .subscribe(onNext: { [weak self] _ in
+            .asDriver()
+            .drive(onNext: { [weak self] _ in
                 guard let strongSelf = self else {return}
                 strongSelf.scrollToNextPhoto()
                 strongSelf.likePhotoButton.bounceEffect()

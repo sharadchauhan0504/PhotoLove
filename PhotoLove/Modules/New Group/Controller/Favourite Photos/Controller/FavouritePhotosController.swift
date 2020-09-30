@@ -47,12 +47,14 @@ class FavouritePhotosController: UIViewController {
                 guard let strongSelf = self else {return}
                 strongSelf.likedPhotos = likedPhotos
                 strongSelf.likedPhotosCollectionView.reloadData()
-            }).disposed(by: disposeBag)
+            })
+            .disposed(by: disposeBag)
     }
     
     private func assignCollectionDelegates() {
         likedPhotosCollectionView.rx.itemSelected
-            .subscribe(onNext: { [weak self] (indexPath) in
+            .asDriver()
+            .drive(onNext: { [weak self] (indexPath) in
                 guard let strongSelf = self, let cell = strongSelf.likedPhotosCollectionView.cellForItem(at: indexPath) else {return}
                 cell.bounceEffect()
             })
